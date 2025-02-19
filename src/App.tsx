@@ -7,7 +7,7 @@ import LeftColumn from './components/LeftColumn';
 import ProfileConfig from './pages/ProfileConfig';
 import Home from './pages/Home';
 import Saas1 from './pages/Saas1';
-import Saas2 from './pages/Saas2';
+import Twilio from './pages/Twilio';
 
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Layout><Home /></Layout>} />
         <Route path="/saas1" element={<Layout><Saas1 /></Layout>} />
-        <Route path="/saas2" element={<Layout><Saas2 /></Layout>} />
+        <Route path="/twilio" element={<Layout><Twilio /></Layout>} />
         <Route path="/profile/config" element={<Layout><ProfileConfig /></Layout>} />
 
       </Routes>
