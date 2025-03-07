@@ -45,7 +45,7 @@ function Twilio() {
     const fetchPhoneNumbers = async () => {
       try {
         const response = await axios.get<AxiosResponse>(
-          "https://iskconkanpurhdfc.wearedeveloper.site/get-phone-numbers"
+          "https://idioma-ai-backend-9e283a1b7abf.herokuapp.com/get-phone-numbers"
         );
 
         if (response.data.success) {
@@ -111,7 +111,7 @@ function Twilio() {
 
     try {
       const response = await axios.post<AxiosResponse>(
-        "https://iskconkanpurhdfc.wearedeveloper.site/send-message", // Replace with your actual endpoint
+        "https://idioma-ai-backend-9e283a1b7abf.herokuapp.com/send-message", // Replace with your actual endpoint
         payload
       );
 
